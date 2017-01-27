@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}</title>
+  </head>
+  <body>
+    <h1>A-List</h1>
+
+    {{ block "main" . }}
+
+    {{ end }}
+
+    <!-- More shared code, perhaps a footer -->
+  </body>
+</html>
