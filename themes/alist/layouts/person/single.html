@@ -3,16 +3,16 @@
 {{ end }}
 
 {{ define "main" }}
-    <h3>Name:</h3>
-    {{ .Params.full_name }}
+    <strong>Name:</strong>
+    <p>{{ .Params.full_name }}</p>
 
-    <h3>Place of Origin:</h3>
+    <strong>Place of Origin:</strong>
     <p>{{ .Params.place_origin }}</p>
 
-    <h3>Job Title</h3>
+    <strong>Job Title</strong>
     <p>{{ .Params.job_title }}</p>
 
-    <h3>Companies:</h3>
+    <strong>Companies:</strong>
     <ul>
         {{ range .Params.companies }}
             <li>{{ .name }}</li>
@@ -21,23 +21,23 @@
     </ul>
 
     {{ with .Params.twitter }}
-        <h3>Twitter:</h3>
+        <strong>Twitter:</strong>
         <p>{{ . }}</p>
     {{ end }}
 
     {{ with .Params.facebook }}
-        <h3>Facebook:</h3>
+        <strong>Facebook:</strong>
         <p>{{ . }}</p>
     {{ end }}
 
     {{ with .Params.instagram }}
-        <h3>Instagram:</h3>
+        <strong>Instagram:</strong>
         <p>{{ . }}</p>
     {{ end }}
 
-    <h3>Website:</h3>
+    <strong>Website:</strong>
     <p>{{ .Params.website }}</p>
 
-    <h3>Bio:</h3>
+    <strong>Bio:</strong>
     {{ .Content }}
 {{ end }}
