@@ -1,37 +1,43 @@
-<h1>Name:</h1>
-{{ .Params.full_name }}
+{{ define "title" }}
+    {{ .Params.full_name }}
+{{ end }}
 
-<h1>Place of Origin:</h1>
-<p>{{ .Params.place_origin }}</p>
+{{ define "main" }}
+    <h3>Name:</h3>
+    {{ .Params.full_name }}
 
-<h1>Job Title</h1>
-<p>{{ .Params.job_title }}</p>
+    <h3>Place of Origin:</h3>
+    <p>{{ .Params.place_origin }}</p>
 
-<h1>Companies:</h1>
-<ul>
-    {{ range .Params.companies }}
-        <li>{{ .name }}</li>
-        <p>{{ .title }}</p>
+    <h3>Job Title</h3>
+    <p>{{ .Params.job_title }}</p>
+
+    <h3>Companies:</h3>
+    <ul>
+        {{ range .Params.companies }}
+            <li>{{ .name }}</li>
+            <p>{{ .title }}</p>
+        {{ end }}
+    </ul>
+
+    {{ with .Params.twitter }}
+        <h3>Twitter:</h3>
+        <p>{{ . }}</p>
     {{ end }}
-</ul>
 
-{{ with .Params.twitter }}
-    <h1>Twitter:</h1>
-    <p>{{ . }}</p>
+    {{ with .Params.facebook }}
+        <h3>Facebook:</h3>
+        <p>{{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.instagram }}
+        <h3>Instagram:</h3>
+        <p>{{ . }}</p>
+    {{ end }}
+
+    <h3>Website:</h3>
+    <p>{{ .Params.website }}</p>
+
+    <h3>Bio:</h3>
+    {{ .Content }}
 {{ end }}
-
-{{ with .Params.facebook }}
-    <h1>Facebook:</h1>
-    <p>{{ . }}</p>
-{{ end }}
-
-{{ with .Params.instagram }}
-    <h1>Instagram:</h1>
-    <p>{{ . }}</p>
-{{ end }}
-
-<h1>Website:</h1>
-<p>{{ .Params.website }}</p>
-
-<h1>Bio:</h1>
-{{ .Content }}
