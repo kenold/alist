@@ -1,18 +1,20 @@
 ---
-first_name: Jean-Edouard
-middle_initial:
+first_name: Jean
+middle_initial: Edouard
 last_name: Gustave
-full_name: Jean-Edouard Gustave
+full_name: Jean Edouard Gustave
 job_title: Designer
 companies:
   - name: Antean Studios
     title: CEO, Designer
     start:
     end:
+    url:
   - name: Top Kreyol
     title: Designer
     start:
     end:
+    url:
 sex: M
 place_origin: Jacmel
 twitter: jeangustavee
