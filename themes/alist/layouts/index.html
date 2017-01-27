@@ -1,1 +1,5 @@
 <h1>Startup A-List App</h1>
+
+{{ range .Data.Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Params.full_name }}</a></li>
+{{ end }}
