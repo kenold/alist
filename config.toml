@@ -1,0 +1,5 @@
+languageCode = "en-us"
+title = "Startup A-List"
+baseurl = "http://example.org/"
+
+theme = "alist"
