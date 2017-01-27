@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
+    {{ .Hugo.Generator }}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
     <title>{{ block "title" . }}
       {{ .Site.Title }}
     {{ end }}</title>
-  </head>
+
+    <link type="text/css" href="{{ .Site.BaseURL }}/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="{{ .Site.BaseURL }}/css/style.css" rel="stylesheet">
+</head>
+
   <body>
-    <h1>A-List</h1>
+    <h1><a href="/">A-List</a></h1>
 
     {{ block "main" . }}
 
     {{ end }}
 
-    <!-- More shared code, perhaps a footer -->
+    {{ partial "footer.html" }}
   </body>
 </html>
