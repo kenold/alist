@@ -6,13 +6,15 @@ full_name: Carel Pedre
 job_title: Radio/TV Host
 companies:
   - name: Chokarella
-    title: CEO, Designer
+    title: Host
     start:
     end:
+    url:
   - name: Plezi Kanaval
     title: Co-Founder
     start:
     end:
+    url:
 sex: M
 place_origin: Port-au-Prince
 twitter: carelpedre
