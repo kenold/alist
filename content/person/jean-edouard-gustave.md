@@ -19,7 +19,7 @@ sex: M
 place_origin: Jacmel
 twitter: jeangustavee
 facebook: jegustave
-instagram:
+instagram: anteanstudios
 website: http://www.anteanstudios.com
 avatar: jean-edouard-gustave.jpg
 weight: 2
