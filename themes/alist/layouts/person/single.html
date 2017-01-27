@@ -1,0 +1,37 @@
+<h1>Name:</h1>
+{{ .Params.full_name }}
+
+<h1>Place of Origin:</h1>
+<p>{{ .Params.place_origin }}</p>
+
+<h1>Job Title</h1>
+<p>{{ .Params.job_title }}</p>
+
+<h1>Companies:</h1>
+<ul>
+    {{ range .Params.companies }}
+        <li>{{ .name }}</li>
+        <p>{{ .title }}</p>
+    {{ end }}
+</ul>
+
+{{ with .Params.twitter }}
+    <h1>Twitter:</h1>
+    <p>{{ . }}</p>
+{{ end }}
+
+{{ with .Params.facebook }}
+    <h1>Facebook:</h1>
+    <p>{{ . }}</p>
+{{ end }}
+
+{{ with .Params.instagram }}
+    <h1>Instagram:</h1>
+    <p>{{ . }}</p>
+{{ end }}
+
+<h1>Website:</h1>
+<p>{{ .Params.website }}</p>
+
+<h1>Bio:</h1>
+{{ .Content }}
