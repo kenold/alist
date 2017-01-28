@@ -4,39 +4,42 @@
 
 {{ define "main" }}
     <div class="page-header">
-        <h1>{{ .Params.full_name }} <small>from {{ .Params.place_origin }}</small></h1>
-    </div>    
+        <h1>{{ .Params.full_name }}
+            <small>{{ .Params.job_title }}
+                <span class="pull-right">from {{ .Params.place_origin }}</span>
+            </small>
+        </h1>
+    </div>
 
-    <strong>Job Title</strong>
-    <p>{{ .Params.job_title }}</p>
+    {{ .Content }}
 
-    <strong>Companies:</strong>
+    <div class="page-header">
+        <h1>Companies</h1>
+    </div>
     <ul>
         {{ range .Params.companies }}
-            <li>{{ .name }}</li>
-            <p>{{ .title }}</p>
+        <li>{{ .name }}</li>
+        <p>{{ .title }}</p>
         {{ end }}
     </ul>
 
-    <h2>Social Profiles</h2>
+    <div class="page-header">
+        <h1>Social Profiles</h1>
+    </div>
+
     {{ with .Params.twitter }}
-        <strong>Twitter:</strong>
-        <p>{{ . }}</p>
+        <p><span class="lead">Twitter:</span> {{ . }}</p>
     {{ end }}
 
     {{ with .Params.facebook }}
-        <strong>Facebook:</strong>
-        <p>{{ . }}</p>
+        <p><span class="lead">Facebook:</span> {{ . }}</p>
     {{ end }}
 
     {{ with .Params.instagram }}
-        <strong>Instagram:</strong>
-        <p>{{ . }}</p>
+        <p><span class="lead">Instagram:</span> {{ . }}</p>
     {{ end }}
 
-    <strong>Website:</strong>
-    <p>{{ .Params.website }}</p>
-
-    <strong>Bio:</strong>
-    {{ .Content }}
+    {{ with .Params.instagram }}
+        <p><span class="lead">Website:</span> {{ . }}</p>
+    {{ end }}
 {{ end }}
