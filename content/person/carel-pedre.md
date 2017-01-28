@@ -33,8 +33,6 @@ awards:
     isWinner: Yes
 weight: 1
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta necessitatibus, repellendus incidunt impedit tempore quae enim error voluptatum sunt nemo tempora animi nesciunt voluptate, dolores laudantium vel architecto suscipit esse!
-
-> Rerum eveniet cupiditate consequuntur asperiores fugiat
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta necessitatibus, repellendus incidunt impedit tempore quae enim error voluptatum sunt nemo tempora animi nesciunt voluptate, dolores laudantium vel architecto suscipit esse! Rerum eveniet cupiditate consequuntur asperiores fugiat
 
 Ipsum dolor sit amet, consectetur adipisicing elit. Rerum eveniet cupiditate consequuntur asperiores fugiat, possimus vitae, minima suscipit atque? Veritatis minus vitae unde asperiores quaerat, sint dolorum at accusamus quam!
