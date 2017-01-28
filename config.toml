@@ -3,3 +3,6 @@ title = "Startup A-List"
 baseurl = "http://example.org/"
 
 theme = "alist"
+
+[permalinks]
+person = "/people/:filename/"
