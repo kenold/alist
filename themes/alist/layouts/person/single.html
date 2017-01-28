@@ -3,11 +3,9 @@
 {{ end }}
 
 {{ define "main" }}
-    <strong>Name:</strong>
-    <p>{{ .Params.full_name }}</p>
-
-    <strong>Place of Origin:</strong>
-    <p>{{ .Params.place_origin }}</p>
+    <div class="page-header">
+        <h1>{{ .Params.full_name }} <small>from {{ .Params.place_origin }}</small></h1>
+    </div>    
 
     <strong>Job Title</strong>
     <p>{{ .Params.job_title }}</p>
@@ -20,6 +18,7 @@
         {{ end }}
     </ul>
 
+    <h2>Social Profiles</h2>
     {{ with .Params.twitter }}
         <strong>Twitter:</strong>
         <p>{{ . }}</p>
