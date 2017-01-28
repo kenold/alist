@@ -9,9 +9,12 @@
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
 
-        <title>{{ block "title" . }}
-          {{ .Site.Title }}
-        {{ end }}</title>
+        <title>
+            {{ block "title" . }}
+
+            {{ end }}
+            | {{ .Site.Title }}
+        </title>
 
         <link type="text/css" href="{{ .Site.BaseURL }}/css/bootstrap.min.css" rel="stylesheet">
         <link type="text/css" href="{{ .Site.BaseURL }}/css/style.css" rel="stylesheet">
