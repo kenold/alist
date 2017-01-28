@@ -4,11 +4,8 @@
 
 {{ define "main" }}
     <div class="page-header">
-        <h1>{{ .Params.full_name }}
-            <small>{{ .Params.job_title }}
-                <span class="pull-right">from {{ .Params.place_origin }}</span>
-            </small>
-        </h1>
+        <h1>{{ .Params.full_name }}<small>{{ .Params.job_title }}</small></h1>
+        <span class="text-muted">from {{ .Params.place_origin }}</span>
     </div>
 
     {{ .Content }}
@@ -28,15 +25,15 @@
     </div>
 
     {{ with .Params.twitter }}
-        <p><span class="lead">Twitter:</span> {{ . }}</p>
+        <p><span class="lead">Twitter:</span> @{{ . }}</p>
     {{ end }}
 
     {{ with .Params.facebook }}
-        <p><span class="lead">Facebook:</span> {{ . }}</p>
+        <p><span class="lead">Facebook:</span> /{{ . }}</p>
     {{ end }}
 
     {{ with .Params.instagram }}
-        <p><span class="lead">Instagram:</span> {{ . }}</p>
+        <p><span class="lead">Instagram:</span> /{{ . }}</p>
     {{ end }}
 
     {{ with .Params.instagram }}
