@@ -1,6 +1,6 @@
 ---
 date: 2017-01-27
-type: Long-Form
+format: Long-Form
 person: Carel Pedre
 excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis, suscipit accusamus, voluptates.
 youtube_id:
