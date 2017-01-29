@@ -2,7 +2,9 @@
     Welcome
 {{ end }}
 {{ define "main" }}
-    {{ range (where .Data.Pages "Section" "person") }}
-        {{ partial "components/person-list-item.html" . }}
-    {{ end }}
+    <div class="row">
+        {{ range (where .Data.Pages "Section" "person") }}
+            {{ partial "components/person-list-item.html" . }}
+        {{ end }}
+    </div>
 {{ end }}
