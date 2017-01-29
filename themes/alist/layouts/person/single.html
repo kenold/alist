@@ -22,6 +22,10 @@
 {{ end }}
 
 {{ define "sidebar" }}
+    <div class="">
+        <img src="/images/people/{{ .Params.avatar }}" class="img-thumbnail img-responsive" alt="{{ .Params.full_name }}">
+    </div>
+
     <div class="page-header">
         <h1>Social Profiles</h1>
     </div>
