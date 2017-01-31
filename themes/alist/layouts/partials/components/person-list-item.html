@@ -1,5 +1,6 @@
 <div class="col-md-4">
-    <a href="/interview/{{ .File.BaseFileName }}">
+    <a href="{{ .Permalink }}">
         <img src="/images/people/{{ .Params.avatar }}" class="img-thumbnail img-responsive" alt="{{ .Params.full_name }}">
-        <p>{{ .Params.full_name }}</p></a>
+        <p>{{ .Params.full_name }}</p>
+    </a>
 </div>
