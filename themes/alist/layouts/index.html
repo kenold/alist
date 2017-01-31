@@ -3,14 +3,6 @@
 {{ end }}
 {{ define "main" }}
     <div class="row">
-        <h1>People</h1>
-        {{ range (where .Data.Pages "Section" "person") }}
-            {{ partial "components/person-list-item.html" . }}
-        {{ end }}
-    </div>
-
-    <div class="row">
-        <h1>Interviews</h1>
         {{ range (where .Data.Pages "Section" "interview") }}
             {{ partial "components/interview-list-item.html" . }}
         {{ end }}
