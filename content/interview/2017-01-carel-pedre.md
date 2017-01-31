@@ -2,14 +2,13 @@
 date: 2017-01-27
 format: Long-Form
 person: Carel Pedre
-excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis, suscipit accusamus, voluptates.
 youtube_id:
 vimeo_id:
 soundcloud_id:
 categories: ["Text", "Audio"]
 tags: ["Haitian Host", "Carel Haiti", "Carel Pedre Chokarella"]
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis, suscipit accusamus, voluptates repellat quibusdam labore? Voluptatem debitis.
+~~Carel 1~~ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis, suscipit accusamus, voluptates repellat quibusdam labore? Voluptatem debitis.
 
 ### Vero nemo sit officia sapiente corporis totam voluptatum reprehenderit?
 
