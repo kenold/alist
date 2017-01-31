@@ -1,9 +1,6 @@
 ---
-first_name: Carel
-middle_initial:
-last_name: Pedre
 full_name: Carel Pedre
-job_title: Radio/TV Host
+avatar: carel-pedre.jpg
 companies:
   - name: Chokarella
     title: Host
@@ -19,9 +16,8 @@ sex: M
 place_origin: Port-au-Prince
 twitter: carelpedre
 facebook: carel-pedre
-instagram:
+instagram: carelpedre
 website: http://www.carelpedre.com
-avatar: carel-pedre.jpg
 awards:
   - org: The Shorty Awards
     category: Humanitarian
