@@ -2,25 +2,6 @@
     {{ .Params.full_name }}
 {{ end }}
 
-{{ define "main" }}
-    <div class="page-header">
-        <h1>{{ .Params.full_name }}<small> {{ .Params.job_title }}</small></h1>
-        <span class="text-muted">from {{ .Params.place_origin }}</span>
-    </div>
-
-    {{ .Content }}
-
-    <div class="page-header">
-        <h1>Companies</h1>
-    </div>
-    <ul>
-        {{ range .Params.companies }}
-            <li>{{ .name }}</li>
-            <p>{{ .title }}</p>
-        {{ end }}
-    </ul>
-{{ end }}
-
 {{ define "sidebar" }}
     <div class="">
         <img src="/images/people/{{ .Params.avatar }}" class="img-thumbnail img-responsive" alt="{{ .Params.full_name }}">
@@ -44,5 +25,33 @@
 
     {{ with .Params.website }}
         <p><i class="fa fa-link fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
+    {{ end }}
+
+    <div class="page-header">
+        <h1>Companies</h1>
+    </div>
+    <ul>
+        {{ range .Params.companies }}
+            <li>{{ .name }}</li>
+            <p>{{ .title }}</p>
+        {{ end }}
+    </ul>
+{{ end }}
+
+{{ define "main" }}
+    <div class="page-header">
+        <h1>{{ .Params.full_name }}<small> {{ .Params.job_title }}</small></h1>
+        <span class="text-muted">from {{ .Params.place_origin }}</span>
+    </div>
+
+    {{ .Content }}
+
+    <h1>Interview</h1>
+    {{ $name := .Params.full_name }}
+    {{ range (where .Site.Pages "Section" "interview").ByDate.Reverse }}
+        {{ $interview_person := .Params.person }}
+        {{ if eq $interview_person $name }}
+            {{ .Content }}
+        {{ end }}
     {{ end }}
 {{ end }}
