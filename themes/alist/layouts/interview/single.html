@@ -2,9 +2,7 @@
     {{$person := .Params.person}}
     {{range where .Site.Pages "Section" "person"}}
         {{if eq .Params.full_name $person}}
-            <div class="">
-                <img src="/images/people/{{ .Params.avatar }}" class="img-thumbnail img-responsive" alt="{{ .Params.full_name }}">
-            </div>
+            <img src="/images/people/{{ .Params.avatar }}" class="img-thumbnail img-responsive" alt="{{ .Params.full_name }}">
 
             <div class="page-header">
                 <h1>Social Profiles</h1>
@@ -41,7 +39,6 @@
 
 {{ define "main" }}
     <h1>{{ .Params.person }}</h1>
-    <p>{{ .Params.excerpt }}</p>
     <hr>
     <p>{{ .Content }}</p>
 {{ end }}
