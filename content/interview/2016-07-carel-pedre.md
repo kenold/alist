@@ -2,6 +2,7 @@
 date: 2017-02-27
 format: Long-Form
 person: Carel Pedre
+photo: carel-pedre.jpg
 youtube_id:
 vimeo_id:
 soundcloud_id:
