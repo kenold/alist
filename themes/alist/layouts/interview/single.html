@@ -1,1 +1,10 @@
-<h1>Interview Format: {{ .Params.format }}</h1>
+{{ define "sidebar" }}
+    side
+{{ end }}
+
+{{ define "main" }}
+    <h1>{{ .Params.person }}</h1>
+    <p>{{ .Params.excerpt }}</p>
+    <hr>
+    <p>{{ .Content }}</p>
+{{ end }}
