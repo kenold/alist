@@ -5,14 +5,14 @@ avatar: carel-pedre.jpg
 companies:
   - name: Chokarella
     title: Host
-    start:
-    end:
-    url:
+    start: 2010
+    end: Present
+    url: http://www.chokarella.com
   - name: Plezi Kanaval
     title: Co-Founder
-    start:
-    end:
-    url:
+    start: 2014
+    end: Present
+    url: http://www.plezikanaval.com
 sex: M
 place_origin: Port-au-Prince
 twitter: carelpedre
