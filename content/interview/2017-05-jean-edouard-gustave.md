@@ -2,6 +2,7 @@
 date: 2017-05-12
 format: Podcast
 person: Jean Edouard Gustave
+job_title: Graphic Designer
 photo: jean-edouard-gustave.jpg
 youtube_id:
 vimeo_id:
