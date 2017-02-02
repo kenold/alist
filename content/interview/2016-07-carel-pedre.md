@@ -7,9 +7,13 @@ youtube_id:
 vimeo_id:
 soundcloud_id:
 categories: ["Text", "Audio"]
-tags: ["Haitian Host", "Carel Haiti", "Carel Pedre Chokarella"]
+tags:
+  - Haitian Host
+  - Carel Haiti
+  - Chokarella
+  - Plezi Kanaval
 ---
-~~Carel 2~~: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis, suscipit accusamus, voluptates repellat quibusdam labore? Voluptatem debitis.
+Carel : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis, suscipit accusamus, voluptates repellat quibusdam labore? Voluptatem debitis.
 
 ### Vero nemo sit officia sapiente corporis totam voluptatum reprehenderit?
 
