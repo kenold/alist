@@ -33,4 +33,5 @@ code {
 }
 
 .sidebar .page-header:first-child {
+    margin: 0 0 20px;
 }
