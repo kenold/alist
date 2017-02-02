@@ -1,40 +1,39 @@
 {{ define "sidebar" }}
-    {{$person := .Params.person}}
-    {{range where .Site.Pages "Section" "person"}}
-        {{if eq .Params.full_name $person}}
-            <img src="/images/people/{{ .Params.avatar }}" class="img-thumbnail img-responsive" alt="{{ .Params.full_name }}">
+    {{$person := index .Site.Data.people .Params.person }}
 
-            <div class="page-header">
-                <h1>Social Profiles</h1>
-            </div>
+    <figure>
+        <img src="/images/people/{{ $person.avatar }}" class="img-thumbnail img-responsive" alt="{{ $person.name }}">
+    </figure>
 
-            {{ with .Params.twitter }}
-                <p><i class="fa fa-twitter fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
-            {{ end }}
+    <div class="page-header">
+        <h1>Social Profiles</h1>
+    </div>
 
-            {{ with .Params.facebook }}
-                <p><i class="fa fa-facebook fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
-            {{ end }}
+    {{ with $person.twitter }}
+        <p><i class="fa fa-twitter fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
+    {{ end }}
 
-            {{ with .Params.instagram }}
-                <p><i class="fa fa-instagram fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
-            {{ end }}
+    {{ with $person.facebook }}
+        <p><i class="fa fa-facebook fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
+    {{ end }}
 
-            {{ with .Params.website }}
-                <p><i class="fa fa-link fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
-            {{ end }}
+    {{ with $person.instagram }}
+        <p><i class="fa fa-instagram fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
+    {{ end }}
 
-            <div class="page-header">
-                <h1>Companies</h1>
-            </div>
-            <ul>
-                {{ range .Params.companies }}
-                    <li>{{ .name }}</li>
-                    <p>{{ .title }}</p>
-                {{ end }}
-            </ul>
-        {{end}}
-    {{end}}
+    {{ with $person.website }}
+        <p><i class="fa fa-link fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
+    {{ end }}
+
+    <div class="page-header">
+        <h1>Companies</h1>
+    </div>
+    <ul>
+        {{ range $person.companies }}
+            <li>{{ .name }}</li>
+            <p>{{ .title }}</p>
+        {{ end }}
+    </ul>
 {{ end }}
 
 {{ define "main" }}
