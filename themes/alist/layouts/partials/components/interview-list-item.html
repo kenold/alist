@@ -1,7 +1,9 @@
 <div class="col-md-4">
     <a href="{{ .Permalink }}">
-        <img src="/images/people/{{ .Params.photo }}" class="img-thumbnail img-responsive" alt="{{ .Params.person }} Interview">
+        <figure>
+            <img src="/images/people/{{ .Params.photo }}" class="img-thumbnail img-responsive" alt="{{ .Params.person }} Interview">
+        </figure>
+
         <p>{{ .Params.person }}</p>
     </a>
-    <p>{{ dateFormat "Jan 2, 2006" .Date }}</p>
 </div>
