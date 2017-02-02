@@ -30,8 +30,8 @@
     </div>
     <ul>
         {{ range $person.companies }}
-            <li>{{ .name }}</li>
-            <p>{{ .title }}</p>
+            <li>{{ .name }} ({{ .title }})</li>
+            <p>{{ .start }} - {{ .end }}</p>
         {{ end }}
     </ul>
 {{ end }}
