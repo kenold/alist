@@ -49,6 +49,17 @@
                     <p>{{ .start }} - {{ .end }}</p>
                 {{ end }}
             </ul>
+
+            <div class="page-header">
+                <h4>Awards</h4>
+            </div>
+            <ul class="list-unstyled">
+                {{ range $person.awards }}
+                    <li>{{ .year }} - {{ .org }}</li>
+                    <p>Category: {{ .category }}</p>
+                    <p>{{ if eq .isWinner true }}Won{{ else }}Nominated{{ end }}</p>
+                {{ end }}
+            </ul>
         </div> <!-- /.col-md-4 -->
     </div> <!-- /.sidebar -->
 {{ end }}
