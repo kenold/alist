@@ -1,0 +1,30 @@
+---
+name: Carel Pedre
+test: Working OK
+avatar: carel-pedre.jpg
+companies:
+  - name: Chokarella
+    title: Host
+    start:
+    end:
+    url:
+  - name: Plezi Kanaval
+    title: Co-Founder
+    start:
+    end:
+    url:
+sex: M
+place_origin: Port-au-Prince
+twitter: carelpedre
+facebook: carel-pedre
+instagram: carelpedre
+website: http://www.carelpedre.com
+awards:
+  - org: The Shorty Awards
+    category: Humanitarian
+    year: 2012
+    isWinner: Yes
+  - org: Clear Channel
+    category: Change Maker
+    year: 2010
+    isWinner: Yes
