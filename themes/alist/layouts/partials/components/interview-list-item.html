@@ -1,9 +1,9 @@
 <div class="col-md-4">
     <a href="{{ .Permalink }}">
         <figure>
-            <img src="/images/people/{{ .Params.photo }}" class="img-thumbnail img-responsive" alt="{{ .Params.person }} Interview">
+            <img src="/images/people/thumbs/{{ .Params.photo }}" class="img-responsive" alt="{{ .Params.person }} Interview">
         </figure>
-
-        <p>{{ .Params.person }}</p>
+        <h4>{{ .Params.person }}</h4>
     </a>
+    <p>{{ .Params.job_title }}</p>
 </div>
