@@ -13,6 +13,11 @@ companies:
     start: 2014
     end: Present
     url: http://www.plezikanaval.com
+education:
+    - school:
+      major:
+      country:
+      period:
 sex: M
 place_origin: Port-au-Prince
 twitter: carelpedre
