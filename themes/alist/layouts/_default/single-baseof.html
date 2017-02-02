@@ -3,18 +3,20 @@
     {{ partial "nav.html" }}
 
     <div class="container">
+        <!--  Featured Photo -->
+        {{ block "featured" . }}
 
-        <div class="col-md-4">
-            {{ block "sidebar" . }}
+        {{ end }}
 
-            {{ end }}
-        </div>
+        <!--  Sidebar -->
+        {{ block "sidebar" . }}
 
-        <div class="col-md-8">
-            {{ block "main" . }}
+        {{ end }}
 
-            {{ end }}
-        </div>
+        <!--  Main Content -->
+        {{ block "main" . }}
+
+        {{ end }}
     </div> <!--  /.container -->
 
     {{ partial "footer.html" }}
