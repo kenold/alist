@@ -1,19 +1,21 @@
 {{ define "featured" }}
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <figure>
-                <img src="/images/people/{{ .Params.photo }}" class="img-thumbnail img-responsive" alt="{{ .Params.person }}">
-            </figure>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="page-header">
-                <h1 class="text-center">{{ .Params.person }}</h1>
+    <div class="featured">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <figure>
+                    <img src="/images/people/{{ .Params.photo }}" class="img-thumbnail img-responsive" alt="{{ .Params.person }}">
+                </figure>
             </div>
         </div>
-    </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1 class="text-center">{{ .Params.person }}</h1>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /.featured -->
 {{ end }}
 
 {{ define "sidebar" }}
