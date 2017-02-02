@@ -1,9 +1,17 @@
 {{ define "featured" }}
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
             <figure>
                 <img src="/images/people/{{ .Params.photo }}" class="img-thumbnail img-responsive" alt="{{ .Params.person }}">
             </figure>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header">
+                <h1 class="text-center">{{ .Params.person }}</h1>
+            </div>
         </div>
     </div>
 {{ end }}
@@ -11,43 +19,44 @@
 {{ define "sidebar" }}
     {{ $person := index .Site.Data.people .Params.person }}
 
-    <div class="col-md-4">
-        <div class="page-header">
-            <h4>Social Profiles</h4>
-        </div>
-
-        {{ with $person.twitter }}
-            <p><i class="fa fa-twitter fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
-        {{ end }}
-
-        {{ with $person.facebook }}
-            <p><i class="fa fa-facebook fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
-        {{ end }}
-
-        {{ with $person.instagram }}
-            <p><i class="fa fa-instagram fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
-        {{ end }}
-
-        {{ with $person.website }}
-            <p><i class="fa fa-link fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
-        {{ end }}
-
-        <div class="page-header">
-            <h4>Companies</h4>
-        </div>
-        <ul class="list-unstyled">
-            {{ range $person.companies }}
-                <li>{{ .name }} ({{ .title }})</li>
-                <p>{{ .start }} - {{ .end }}</p>
+    <div class="sidebar">
+        <div class="col-md-4">
+            <div class="page-header">
+                <h4>Social Profiles</h4>
+            </div>
+            {{ with $person.twitter }}
+                <p><i class="fa fa-twitter fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
             {{ end }}
-        </ul>
-    </div> <!-- /.col-md-4 -->
+
+            {{ with $person.facebook }}
+                <p><i class="fa fa-facebook fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
+            {{ end }}
+
+            {{ with $person.instagram }}
+                <p><i class="fa fa-instagram fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
+            {{ end }}
+
+            {{ with $person.website }}
+                <p><i class="fa fa-link fa-fw fa-lg" aria-hidden="true"></i> {{ . }}</p>
+            {{ end }}
+
+            <div class="page-header">
+                <h4>Companies</h4>
+            </div>
+            <ul class="list-unstyled">
+                {{ range $person.companies }}
+                    <li>{{ .name }} ({{ .title }})</li>
+                    <p>{{ .start }} - {{ .end }}</p>
+                {{ end }}
+            </ul>
+        </div> <!-- /.col-md-4 -->
+    </div> <!-- /.sidebar -->
 {{ end }}
 
 {{ define "main" }}
-    <div class="col-md-8">
-        <h1>{{ .Params.person }}</h1>
-        <hr>
-        <p>{{ .Content }}</p>
-    </div> <!-- /.col-md-8 -->
+    <div class="content">
+        <div class="col-md-8">
+            <p>{{ .Content }}</p>
+        </div> <!-- /.col-md-8 -->
+    </div> <!-- /.cotent -->
 {{ end }}
