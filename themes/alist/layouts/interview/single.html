@@ -58,8 +58,8 @@
             <ul class="list-unstyled">
                 {{ range $person.awards }}
                     <li>{{ .year }} - {{ .org }}</li>
-                    <p>Category: {{ .category }}</p>
-                    <p>{{ if eq .isWinner true }}Won{{ else }}Nominated{{ end }}</p>
+                    <li>Category: {{ .category }}</li>
+                    <li>{{ if eq .isWinner true }}Won{{ else }}Nominated{{ end }}</li>
                 {{ end }}
             </ul>
         </div> <!-- /.col-md-4 -->
@@ -69,7 +69,9 @@
 {{ define "main" }}
     <div class="content">
         <div class="col-md-8">
-            <p>{{ .Content }}</p>
+            <p>{{ .Summary }}</p>
+            {{ $body := replace .Content .Summary "" }}
+            <p>{{ $body | safeHTML }}</p>            
         </div> <!-- /.col-md-8 -->
     </div> <!-- /.cotent -->
 {{ end }}
