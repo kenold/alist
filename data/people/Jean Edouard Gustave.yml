@@ -6,14 +6,14 @@ job_title: Designer
 companies:
   - name: Antean Studios
     title: CEO, Designer
-    start:
-    end:
-    url:
+    start: 2016
+    end: Present
+    url: http://www.anteanstudios.com
   - name: Top Kreyol
     title: Designer
-    start:
-    end:
-    url:
+    start: 2012
+    end: Present
+    url: http://www.topkreyol.com
 education:
     - school:
       major:
@@ -24,6 +24,5 @@ place_origin: Jacmel
 twitter: jeangustavee
 facebook: jegustave
 instagram: anteanstudios
-website: http://www.anteanstudios.com
+website: http://jeanegustave.com/
 avatar: jean-edouard-gustave.jpg
-weight: 2
