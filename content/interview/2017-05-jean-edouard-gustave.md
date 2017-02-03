@@ -12,6 +12,7 @@ tags:
   - Haitian Designer
   - Jacmel
   - Jacksonville Designers
+weight: 2
 ---
 Gustave 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis, suscipit accusamus, voluptates repellat quibusdam labore? Voluptatem debitis.
 

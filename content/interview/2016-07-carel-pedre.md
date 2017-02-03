@@ -13,6 +13,7 @@ tags:
   - Carel Haiti
   - Chokarella
   - Plezi Kanaval
+weight: 1  
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis, suscipit accusamus, voluptates repellat quibusdam labore? Voluptatem debitis.
 <!--more-->
