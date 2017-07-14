@@ -1,8 +1,9 @@
 languageCode = "en-us"
 title = "Startup A-List"
-baseurl = "http://example.org/"
+baseurl = "/"
 
 theme = "alist"
+# theme = "hugo-creative-portfolio-theme"
 
 [permalinks]
 person = "/people/:filename/"
